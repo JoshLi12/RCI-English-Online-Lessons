@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="icon" href="./favicon.ico" type="image/x-icon"> -->
+  </head>
+  <body>
+    <main>
+      <a id="sub-icon" onclick="dropMenu()">
+        <div class="dropdownIcon" id="dropdownIconTop">
+        </div>
+        <div class="dropdownIcon" id="dropdownIconBottom">
+        </div>
+      </a>
+
+      <div id="dropdown-page">
+
+        <div id="center-box">
+          <div class="dropdown-buttons">
+            <a id="dropdown-home" href="./index.html">
+              HOME / 主页
+            </a>
+          </div>
+          <div class="dropdown-buttons">
+            <a id="dropdown-feedback" href = "./feedback.html">
+              FEEDBACK / 反馈页面
+            </a>
+          </div>
+          <div class="dropdown-buttons">
+            <a id="dropdown-help" href = "./help.html">
+              HELP / 帮助页面
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="help-page">
+        <a href="./index.html" style="text-decoration: none">
+          <i class="fa fa-arrow-circle-left return-arrow hvr-icon-back"></i>
+        </a>
+        <div id="help-page-title">Help Page / 帮助页面</div>
+      </div>
+
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
