@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Feedback</title>
+    <title>Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
+
     <!-- <link rel="icon" href="./favicon.ico" type="image/x-icon"> -->
   </head>
-  <body>
-    <main>
 
+  <body id="home-page">
+    <main>
       <a id="sub-icon" onclick="dropMenu()">
         <div class="dropdownIcon" id="dropdownIconTop">
         </div>
@@ -41,59 +42,5 @@
           </div>
         </div>
       </div>
-
-
-      <div id="test-page">
-        <a href="./index.html" style="text-decoration: none">
-          <i class="fa fa-arrow-circle-left return-arrow hvr-icon-back"></i>
-        </a>
-
-        <div id="feedback-title">
-          <div class="feedback-title-style">
-            We welcome your feedback! /
-          </div>
-          <div class="feedback-title-style">
-            我们欢迎您的反馈!
-          </div>
-        </div>
-
-        <div id="feedback-separators">
-          <hr class="separators-style">
-          <hr id="feedback-separator-bottom" class="separators-style">
-        </div>
-
-        <form id="forms">
-          <div>
-            <div class="identity-forms">
-              <div class="form-titles">
-                Name / 名字
-              </div>
-              <input type="text" id = "name-input" placeholder="Name / 名字">
-            </div>
-
-            <div id="email" class="identity-forms">
-              <div class="form-titles">
-                Email / 邮箱
-              </div>
-              <input type="text" id = "email-input" placeholder="Email / 邮箱">
-            </div>
-          </div>
-
-          <div id="feedback-forms">
-            <div class="form-titles">
-              Feedback / 反馈
-            </div>
-            <textarea id="feedback-input" placeholder="Enter text / 输入文字"></textarea>
-          </div>
-
-          <div id="submit-button-container">
-            <input id="submit-feedback" type="submit" value="Submit / 提交">
-          </div>
-
-        </form>
-      </div>
     </main>
-    <script src="script.js"></script>
-
   </body>
-</html>

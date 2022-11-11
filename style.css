@@ -20,23 +20,13 @@
   overflow: hidden;
   background-image: url("./public/blue-only.png");
 }
-#test-page {
-  margin:0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  overflow: hidden;
-  background-image: url("./public/blue-only.png");
-}
 #feedback-page {
   margin: 0;
   height: 100%;
   width: 100%;
   overflow: hidden;
+  position: absolute;
   background-image: url("./public/blue-only.png");
-}
-#removeOverflow {
-  overflow: hidden;
 }
 #dropdown-page {
   display: none;
@@ -112,66 +102,50 @@
   width: 38vw;
   height: auto;
 }
-#title {
-  width: 30vw;
+#base-page-title {
+  text-align: center;
+  margin-top: -53vh;
+}
+#base-page-title-chinese {
+
+}
+.base-page-title-style {
   font-size: 36px;
   color: white;
+  text-align: center;
   font-family: Georgia;
   font-weight: bold;
-  position: relative;
-  margin-left: 7vw;
-  bottom: 55vh;
+}
+#home-page-left-side {
+  width: 40%;
+}
+.base-page-title-separators {
+  height: 0.4vh;
+  background-color: #EF4247;
+  border-color: #EF4247;
+  border-radius: 70px;
+  margin-bottom: 3vh;
+}
+#base-separators {
+  margin-top: 7vh;
   text-align: center;
 }
 #title-separator-1 {
   width: 22vw;
-  height: 0.3vh;
-  background-color: #EF4247;
-  border-color: #EF4247;
-  border-radius: 70px;
-  position: relative;
-  margin-left: 11.1vw;
-  bottom: 52vh;
 }
 #title-separator-2 {
-  width: 16.5vw;
-  height: 0.3vh;
-  background-color: #EF4247;
-  border-color: #EF4247;
-  border-radius: 70px;
-  position: relative;
-  margin-left: 13.9vw;
-  bottom: 48.3vh;
+
+  width: 16vw;
 }
 #lesson-finder {
-  width: 20vw;
   font-family: Georgia;
   color: white;
   font-size: 26px;
-  text-align: center;
   font-weight: bold;
-  position: relative;
-  margin-left: 12.2vw;
-  bottom: 42vh;
+  margin-top: 10vh;
+  text-align: center;
 }
-#lesson-number-input {
-  width: 16vw;
-  height: 5.2vh;
-  position: relative;
-  margin-left: 14vw;
-  bottom: 37.7vh;
-  border-radius: 25px;
-  font-size: 21px;
-  padding-left: 12px;
-}
-#lesson-number-input-help {
-  width: 16vw;
-  height: 5.2vh;
-  margin-left: 14vw;
-  border-radius: 25px;
-  font-size: 21px;
-  padding-left: 12px;
-}
+
 #circle {
   height: 35px;
   width: 35px;
@@ -182,25 +156,26 @@
   margin-left: -3vw;
   bottom: 36.35vh;
 }
-#text-input-separator-left {
-  background-color:#EF4247;
-  border-color: #EF4247;
-  border-radius: 70px;
-  position: relative;
-  width: 10vw;
-  height: 0.3vh;
-  margin-left: 14vw;
-  bottom: 30.5vh;
-}
-#text-input-separator-right {
-  background-color:#EF4247;
-  border-color: #EF4247;
-  border-radius: 70px;
-  position: relative;
-  width: 10vw;
+.base-page-input-separators {
+  width: 12vw;
   height: 0.4vh;
-  margin-left: 20.1vw;
-  bottom: 28.5vh;
+  background-color: #EF4247;
+  border-color: #EF4247;
+  border-radius: 70px;
+}
+#base-page-bottom-separators {
+  margin-top: 6vh;
+}
+#bottom-separator-1 {
+  margin-left: 12.5vw;
+}
+#bottom-separator-2 {
+  margin-left: 16vw;
+  margin-top: 2vh;
+}
+#home-page-buttons {
+  text-align: center;
+  margin-top: 4vh;
 }
 #help-button {
   width: 16vw;
@@ -209,14 +184,12 @@
   background-color: #EF4247;
   border-radius: 50px;
   border-width: 3px;
-  position: relative;
-  margin-left: 14.3vw;
-  bottom: 22vh;
   font-family: Georgia;
   color: white;
   font-weight: bold;
   font-size: 1.28vw;
   text-align: center;
+  margin: 2vh;
 }
 #help-button:hover {
   background-color: white;
@@ -230,13 +203,11 @@
   background-color: #EF4247;
   border-radius: 50px;
   border-width: 3px;
-  position: relative;
-  margin-left: -16vw;
-  bottom: 10.3vh;
   font-family: Georgia;
   color: white;
   font-weight: bold;
   font-size: 1.28vw;
+  margin: 2vh;
 }
 #feedback-button:hover {
   background-color: white;
@@ -244,9 +215,6 @@
   transition: 0.25s;
 }
 #submit-input {
-  position: relative;
-  margin-left: -3vw;
-  bottom: 37.65vh;
   border-radius: 50%;
   width: 2.36vw;
   height: 4.6vh;
@@ -256,6 +224,24 @@
   text-align: center;
   border-color: #EF4247;
   border-width: 3px;
+  margin-right: 100px;
+}
+#total-text-entry {
+  text-align: center;
+  margin-top: 5vh;
+}
+#text-entry {
+  display: inline-block;
+  position: absolute;
+  left: 397px;
+  margin-top: 5px;
+}
+#lesson-number-input {
+  width: 16vw;
+  height: 5.2vh;
+  border-radius: 25px;
+  font-size: 21px;
+  padding-left: 12px;
 }
 
 #submit-input:hover {
@@ -333,11 +319,11 @@
 .feedback-title-style {
   color: white;
   font-family: Georgia;
-  font-size: 33px;
+  font-size: 4.5vh;
   font-weight: bold;
 }
 .separators-style {
-  height: 0.3vh;
+  height: 0.4vh;
   background-color: #EF4247;
   border-color: #EF4247;
   border-radius: 70px;
@@ -464,7 +450,7 @@
 }
 
 #help-page-title {
-  font-size: 38px;
+  font-size: 5vh;
   font-weight: bold;
   font-family: Georgia;
   color: white;
@@ -475,7 +461,7 @@
   display: inline-block;
 }
 .video-page-title {
-  font-size: 37px;
+  font-size: 5vh;
   color: white;
   text-align: center;
   margin-top: 6vh;
@@ -483,14 +469,12 @@
   font-family: Georgia;
 }
 .video-arrow-left {
-  width: 0;
-  height: 0;
   border-top: 40px solid transparent;
   border-bottom: 40px solid transparent;
   border-right: 50px solid #EF4247;
   position: absolute;
   left: 18px;
-  top: 327px;
+  top: 50%;
   display: block;
 }
 .video-arrow-left:hover {
@@ -500,14 +484,12 @@
   display: none;
 }
 .video-arrow-right {
-  width: 0;
-  height: 0;
   border-top: 40px solid transparent;
   border-bottom: 40px solid transparent;
   border-left: 50px solid #EF4247;
   position: absolute;
   right: 18px;
-  top: 327px;
+  top: 50%;
   display: block;
 }
 .video-arrow-right:hover {
@@ -521,6 +503,7 @@
   margin: 22vh;
   font-size: 60px;
   font-family: Georgia;
+  font-weight: bold;
   animation-name: a;
   animation-duration: 2s;
   animation-iteration-count: infinite;

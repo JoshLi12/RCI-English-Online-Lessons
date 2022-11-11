@@ -58,7 +58,7 @@ function dropMenu() {
 function saveInput() {
   const lessons = new Map([
     [1, "./videos/video-1.html"],
-    [2, "./video-2.html"]
+    [2, "./videos/video-2.html"]
   ]);
   var lessonInput = parseInt(document.getElementById("lesson-number-input").value);
   let temp = lessons.get(lessonInput);
