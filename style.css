@@ -28,6 +28,10 @@
   position: absolute;
   background-image: url("./public/blue-only.png");
 }
+.lesson-video {
+  text-align: center;
+  margin-top: 2vh;
+}
 #dropdown-page {
   display: none;
   position: absolute;
@@ -37,7 +41,7 @@
   height: 0vh;
   background-image: url("./public/dropdown-menu-3.png");
   animation-name: a;
-  animation-duration: 0.6s;
+  animation-duration: 0.8s;
   animation-fill-mode: forwards;
   align-items: center;
   justify-content: center;
@@ -334,7 +338,7 @@
   color: white;
   font-family: Georgia;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 19px;
   margin: 8px;
 }
 #submit-button-container {
