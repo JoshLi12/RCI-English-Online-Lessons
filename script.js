@@ -44,10 +44,6 @@ function dropMenu() {
     document.getElementById("dropdownIconTop").style["animation-name"] = "dropdownIconTopMoveUp";
     document.getElementById("dropdownIconBottom").style["animation-name"] = "dropdownIconBottomMoveUp";
 
-
-    // document.getElementById("home-page").style["animation-name"] = "indexDown";
-
-    //document.getElementById("base-page").style.display="none";
   }
   else {
     document.getElementById("dropdown-page").style["animation-name"] = "dropdownUp";
@@ -68,5 +64,7 @@ function saveInput() {
       let temp = lessons.get(lessonInput);
       document.getElementById("submit-input-link").setAttribute("href", temp);
     }
+  } else{
+    alert("Invalid input");
   }
 }

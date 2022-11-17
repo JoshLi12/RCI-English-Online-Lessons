@@ -1,5 +1,5 @@
 TODO:
 3. Change all text to be relative to screen size
-4. fix index page UI
-5. Add in notice each time someone opens website for the latest lesson added
+4. Add in error message when invalid input for lesson number submit and feedback submit (using display block and none)
+5. Add in notice each time someone opens website for the latest lesson added (div rectangle)
 6.

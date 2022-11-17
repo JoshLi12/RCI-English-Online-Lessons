@@ -98,8 +98,8 @@
 }
 
 #planet-div {
-  position: relative;
-  margin-left: 53vw;
+  position: absolute;
+  left: 53vw;
   top: 20vh;
 }
 #planet {
@@ -108,10 +108,6 @@
 }
 #base-page-title {
   text-align: center;
-  margin-top: -53vh;
-}
-#base-page-title-chinese {
-
 }
 .base-page-title-style {
   font-size: 36px;
@@ -121,6 +117,8 @@
   font-weight: bold;
 }
 #home-page-left-side {
+  padding-top: 7vh;
+  padding-bottom: 7vh;
   width: 40%;
 }
 .base-page-title-separators {
@@ -220,26 +218,23 @@
 }
 #submit-input {
   border-radius: 50%;
-  width: 2.36vw;
+  width: 4.6vh;
   height: 4.6vh;
   background-color:#EF4247;
   color: white;
   font-size: 20px;
-  text-align: center;
   border-color: #EF4247;
   border-width: 3px;
-  margin-right: 100px;
+  right: 2vh;
+}
+#submit-input-link {
+  margin-left: -6vh;
 }
 #total-text-entry {
   text-align: center;
   margin-top: 5vh;
 }
-#text-entry {
-  display: inline-block;
-  position: absolute;
-  left: 397px;
-  margin-top: 5px;
-}
+
 #lesson-number-input {
   width: 16vw;
   height: 5.2vh;
@@ -505,7 +500,7 @@
 }
 .dropdown-buttons {
   margin: 22vh;
-  font-size: 60px;
+  font-size: 7.5vh;
   font-family: Georgia;
   font-weight: bold;
   animation-name: a;
@@ -517,6 +512,7 @@
   animation-timing-function: ease;
   animation-fill-mode: forwards;
 }
+
 #dropdown-home {
   text-decoration: none;
   color: white;
