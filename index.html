@@ -9,11 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
-
-    <!-- <link rel="icon" href="./favicon.ico" type="image/x-icon"> -->
+    <link rel="icon" href="./public/website-logo.png" type="image/x-icon">
   </head>
 
-  <body id="home-page">
+  <body>
     <main>
       <a id="sub-icon" onclick="dropMenu()">
         <div class="dropdownIcon" id="dropdownIconTop">
@@ -43,41 +42,60 @@
         </div>
       </div>
 
-      <div id="base-page">
+      <div id="home-page">
+          <div id = "planet-div">
+            <img id = "planet" src = "./public/planet-transparent-2.png"/>
+          </div>
 
-        <div id = "planet-div">
-          <img id = "planet" src = "./public/planet-transparent-2.png"/>
+          <div id="home-page-left-side">
+            <div id = "base-page-title">
+              <div class="base-page-title-style">
+                RCI Junior English
+              </div>
+
+              <div id="base-page-title-chinese" class="base-page-title-style">
+                / RCI初级英文
+              </div>
+            </div>
+
+            <div id="base-separators">
+              <hr class="base-page-title-separators" id = "title-separator-1">
+              <hr class="base-page-title-separators" id = "title-separator-2">
+            </div>
+
+            <div id = "lesson-finder">
+              Find your lesson / <br>找课文
+            </div>
+
+            <div id="total-text-entry">
+
+              <input type="text" id = "lesson-number-input" placeholder = "输入课文编号" maxlength = 2>
+                <a id="submit-input-link">
+                  <button id="submit-input" onclick="saveInput()"><i class="fa fa-arrow-right"></i></button>
+                </a>
+              </input>
+            </div>
+
+            <div id="base-page-bottom-separators">
+              <hr id="bottom-separator-1" class="base-page-input-separators">
+              <hr id="bottom-separator-2" class="base-page-input-separators">
+            </div>
+
+            <div id="home-page-buttons">
+              <div>
+                <a href = "./help.html">
+                  <button id="help-button" type="button">Help Page / 帮助页面</button>
+                </a>
+              </div>
+
+              <div>
+                <a href = "./feedback.html">
+                  <button id="feedback-button" type="button">Feedback / 反馈页面</button>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div id = "title">
-          RCI Junior English<br> /  RCI初级英文
-        </div>
-
-        <hr id = "title-separator-1">
-        <hr id = "title-separator-2">
-
-        <div id = "lesson-finder">
-          Find your lesson / <br>找课文
-        </div>
-
-        <div id="total-text-entry">
-          <input type="text" id = "lesson-number-input" placeholder = "输入数字" maxlength = 2>
-          <a id="submit-input-link">
-            <button id="submit-input" onclick="saveInput()"><i class="fa fa-arrow-right"></i></button>
-          </a>
-        </div>
-
-        <hr id = "text-input-separator-left">
-        <hr id = "text-input-separator-right">
-
-        <a href = "./help.html">
-          <button id="help-button" type="button">Help Page / 帮助页面</button>
-        </a>
-
-        <a href = "./test.html">
-          <button id="feedback-button" type="button">Feedback / 反馈</button>
-        </a>
-      </div>
 
 
     </main>

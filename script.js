@@ -4,11 +4,13 @@ function submitFeedback(event) {
   var name  = document.getElementById('name-input').value;
   var email  = document.getElementById('email-input').value;
   var feedback  = document.getElementById('feedback-input').value;
-  writeToDatabase(name, email, feedback)
-  console.log(name, email, feedback)
-  document.getElementById("name-input").value = "";
-  document.getElementById('email-input').value = "";
-  document.getElementById('feedback-input').value = "";
+  if (name && email && feedback) {
+    writeToDatabase(name, email, feedback)
+    console.log(name, email, feedback)
+    document.getElementById("name-input").value = "";
+    document.getElementById('email-input').value = "";
+    document.getElementById('feedback-input').value = "";
+  }
 }
 var form  = document.getElementById('forms');
 form.addEventListener('submit', submitFeedback)
@@ -42,10 +44,6 @@ function dropMenu() {
     document.getElementById("dropdownIconTop").style["animation-name"] = "dropdownIconTopMoveUp";
     document.getElementById("dropdownIconBottom").style["animation-name"] = "dropdownIconBottomMoveUp";
 
-
-    // document.getElementById("home-page").style["animation-name"] = "indexDown";
-
-    //document.getElementById("base-page").style.display="none";
   }
   else {
     document.getElementById("dropdown-page").style["animation-name"] = "dropdownUp";
@@ -58,9 +56,15 @@ function dropMenu() {
 function saveInput() {
   const lessons = new Map([
     [1, "./videos/video-1.html"],
-    [2, "./video-2.html"]
+    [2, "./videos/video-2.html"]
   ]);
-  var lessonInput = parseInt(document.getElementById("lesson-number-input").value);
-  let temp = lessons.get(lessonInput);
-  document.getElementById("submit-input-link").setAttribute("href", temp);
+  if (document.getElementById("lesson-number-input").value) {
+    var lessonInput = parseInt(document.getElementById("lesson-number-input").value);
+    if (lessonInput <= 2) {
+      let temp = lessons.get(lessonInput);
+      document.getElementById("submit-input-link").setAttribute("href", temp);
+    }
+  } else{
+    alert("Invalid input");
+  }
 }

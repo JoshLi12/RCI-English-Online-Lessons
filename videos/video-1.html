@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../public/website-logo.png" type="image/x-icon">
   </head>
   <body id="video-page">
     <main>
@@ -18,13 +19,13 @@
 
       <div class="video-page-title">Lesson 1 / 第一课</div>
 
-      <a id="previous-lesson" onclick="previousLesson()">
-        <div id="first-video" class="video-arrow-left"></div>
-      </a>
-
-      <a id="next-lesson">
+      <a id="next-lesson" href="./video-2.html">
         <div class="video-arrow-right"></div>
       </a>
+      <div class="lesson-video">
+        <!-- delete all allows and add rel=0 in the link and change width and height and add vq=hd720-->
+        <iframe class="lesson-video" width="1100" height="618.75" src="https://www.youtube.com/embed/dxWtzlRah1I?vq=hd720&rel=0" frameborder="0"></iframe>
+      </div>
 
     </main>
     <script src="../script.js"></script>
