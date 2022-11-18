@@ -4,12 +4,10 @@ function submitFeedback(event) {
   var name  = document.getElementById('name-input').value;
   var email  = document.getElementById('email-input').value;
   var feedback  = document.getElementById('feedback-input').value;
-  if (name && email && feedback) {
-    writeToDatabase(name, email, feedback)
-    document.getElementById("name-input").value = "";
-    document.getElementById('email-input').value = "";
-    document.getElementById('feedback-input').value = "";
-  }
+  writeToDatabase(name, email, feedback)
+  document.getElementById("name-input").value = "";
+  document.getElementById('email-input').value = "";
+  document.getElementById('feedback-input').value = "";
 }
 var form  = document.getElementById('forms');
 form.addEventListener('submit', submitFeedback)
@@ -58,6 +56,6 @@ function saveInput() {
       document.getElementById("submit-input-link").setAttribute("href", temp);
     }
   } else{
-    alert("Invalid input");
+    document.getElementById("base-page-error-message").style.display = "block";
   }
 }

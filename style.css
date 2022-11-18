@@ -216,6 +216,16 @@
   color: #EF4247;
   transition: 0.25s;
 }
+#base-page-error-message {
+  display: none;
+}
+.error-message {
+  font-size: 2.4vh;
+  color: #EF4247;
+  font-weight: bold;
+  font-family: Georgia;
+  margin: 5px;
+}
 #submit-input {
   border-radius: 50%;
   width: 4.6vh;
@@ -338,7 +348,10 @@
 }
 #submit-button-container {
   margin-left: 10.5vw;
-  margin-top: 6vh;
+  margin-top: 4vh;
+}
+#feedback-page-error-message {
+  margin-right: 5vh;
 }
 #name-input {
   width: 14vw;
