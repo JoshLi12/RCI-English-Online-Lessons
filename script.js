@@ -6,7 +6,6 @@ function submitFeedback(event) {
   var feedback  = document.getElementById('feedback-input').value;
   if (name && email && feedback) {
     writeToDatabase(name, email, feedback)
-    console.log(name, email, feedback)
     document.getElementById("name-input").value = "";
     document.getElementById('email-input').value = "";
     document.getElementById('feedback-input').value = "";
@@ -27,12 +26,12 @@ let writeToDatabase = (name, email, feedback) => {
     body: JSON.stringify(feedbackData),
   })
     .then((response) => response.json())
-    .then((data) => {
-      console.log('Success:', data);
-    })
-    .catch((error) => {
-      console.error('Error:', error);
-    });
+    // .then((data) => {
+    //   console.log('Success:', data);
+    // })
+    // .catch((error) => {
+    //   console.error('Error:', error);
+    // });
 }
 var dropped = false;
 function dropMenu() {
