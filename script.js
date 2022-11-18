@@ -26,12 +26,6 @@ let writeToDatabase = (name, email, feedback) => {
     body: JSON.stringify(feedbackData),
   })
     .then((response) => response.json())
-    // .then((data) => {
-    //   console.log('Success:', data);
-    // })
-    // .catch((error) => {
-    //   console.error('Error:', error);
-    // });
 }
 var dropped = false;
 function dropMenu() {
