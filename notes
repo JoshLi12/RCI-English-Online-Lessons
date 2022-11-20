@@ -1,4 +1,2 @@
 TODO:
-3. Change all text to be relative to screen size
-5. Add in notice each time someone opens website for the latest lesson added (div rectangle)
-6. add in different error messages for bigger than current lesson and empty input for index page
+1. make enter button valid for choosing lesson plan
