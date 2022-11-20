@@ -6,6 +6,13 @@
   overflow: hidden;
   background-image: url("./public/blue-only.png");
 }
+#lesson-number-update {
+  width: 30%;
+  height: 30%;
+  position: absolute;
+  background-color: white;
+  left: 30vw;
+}
 #video-page {
   margin:0;
   height: 100%;
@@ -28,9 +35,14 @@
   position: absolute;
   background-image: url("./public/blue-only.png");
 }
+.lesson-video-container {
+  margin-top: 3vh;
+}
 .lesson-video {
-  text-align: center;
-  margin-top: 2vh;
+  width: 80vw;
+  height: 80vh;
+  margin: auto;
+  display:block;
 }
 #dropdown-page {
   display: none;
@@ -110,7 +122,7 @@
   text-align: center;
 }
 .base-page-title-style {
-  font-size: 36px;
+  font-size: 5vh;
   color: white;
   text-align: center;
   font-family: Georgia;
@@ -136,18 +148,24 @@
   width: 22vw;
 }
 #title-separator-2 {
-
   width: 16vw;
 }
-#lesson-finder {
+#enter-lesson-number {
   font-family: Georgia;
   color: white;
-  font-size: 26px;
+  font-size: 3.4vh;
   font-weight: bold;
-  margin-top: 10vh;
+  margin-top: 7vh;
   text-align: center;
 }
-
+#new-lesson {
+  font-family: Georgia;
+  color: white;
+  font-size: 2.75vh;
+  font-weight: bold;
+  margin-top: 1vh;
+  text-align: center;
+}
 #circle {
   height: 35px;
   width: 35px;
@@ -189,7 +207,7 @@
   font-family: Georgia;
   color: white;
   font-weight: bold;
-  font-size: 1.28vw;
+  font-size: 2.5vh;
   text-align: center;
   margin: 2vh;
 }
@@ -208,7 +226,7 @@
   font-family: Georgia;
   color: white;
   font-weight: bold;
-  font-size: 1.28vw;
+  font-size: 2.5vh;
   margin: 2vh;
 }
 #feedback-button:hover {
@@ -216,8 +234,15 @@
   color: #EF4247;
   transition: 0.25s;
 }
-#base-page-error-message {
+#base-page-empty-error {
   display: none;
+}
+#base-page-overbound-error {
+  display: none;
+}
+#feedback-page-error-message {
+  display: none;
+  margin-left: 1vh;
 }
 .error-message {
   font-size: 2.4vh;
@@ -232,7 +257,7 @@
   height: 4.6vh;
   background-color:#EF4247;
   color: white;
-  font-size: 20px;
+  font-size: 2.6vh;
   border-color: #EF4247;
   border-width: 3px;
   right: 2vh;
@@ -242,14 +267,14 @@
 }
 #total-text-entry {
   text-align: center;
-  margin-top: 5vh;
+  margin-top: 4vh;
 }
 
 #lesson-number-input {
   width: 16vw;
   height: 5.2vh;
   border-radius: 25px;
-  font-size: 21px;
+  font-size: 2.7vh;
   padding-left: 12px;
 }
 
@@ -343,15 +368,12 @@
   color: white;
   font-family: Georgia;
   font-weight: bold;
-  font-size: 19px;
+  font-size: 2.4vh;
   margin: 8px;
 }
 #submit-button-container {
-  margin-left: 10.5vw;
+  margin-left: 10vw;
   margin-top: 4vh;
-}
-#feedback-page-error-message {
-  margin-right: 5vh;
 }
 #name-input {
   width: 14vw;
@@ -395,7 +417,7 @@
   resize: none;
 }
 #submit-feedback {
-  width: 13vw;
+  width: 14.3vw;
   height: 6.5vh;
   border-color:#EF4247;
   background-color: #EF4247;
@@ -404,7 +426,7 @@
   font-family: Georgia;
   color: white;
   font-weight: bold;
-  font-size: 1.18vw;
+  font-size: 2.3vh;
 }
 #submit-feedback:hover {
   background-color: white;

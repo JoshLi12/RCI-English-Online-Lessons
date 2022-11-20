@@ -4,10 +4,16 @@ function submitFeedback(event) {
   var name  = document.getElementById('name-input').value;
   var email  = document.getElementById('email-input').value;
   var feedback  = document.getElementById('feedback-input').value;
-  writeToDatabase(name, email, feedback)
-  document.getElementById("name-input").value = "";
-  document.getElementById('email-input').value = "";
-  document.getElementById('feedback-input').value = "";
+  if (feedback) {
+    writeToDatabase(name, email, feedback)
+    document.getElementById("name-input").value = "";
+    document.getElementById('email-input').value = "";
+    document.getElementById('feedback-input').value = "";
+    document.getElementById("feedback-page-error-message").style.display = "none";
+  }
+  else {
+    document.getElementById("feedback-page-error-message").style.display = "inline-block";
+  }
 }
 var form  = document.getElementById('forms');
 form.addEventListener('submit', submitFeedback)
@@ -44,7 +50,10 @@ function dropMenu() {
   dropped = !dropped;
 }
 
+
 function saveInput() {
+  document.getElementById("base-page-overbound-error").style.display = "none";
+  document.getElementById("base-page-empty-error").style.display = "none";
   const lessons = new Map([
     [1, "./videos/video-1.html"],
     [2, "./videos/video-2.html"]
@@ -55,7 +64,10 @@ function saveInput() {
       let temp = lessons.get(lessonInput);
       document.getElementById("submit-input-link").setAttribute("href", temp);
     }
+    else {
+      document.getElementById("base-page-overbound-error").style.display = "block";
+    }
   } else{
-    document.getElementById("base-page-error-message").style.display = "block";
+    document.getElementById("base-page-empty-error").style.display = "block";
   }
 }

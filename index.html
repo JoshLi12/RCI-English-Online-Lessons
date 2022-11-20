@@ -63,24 +63,28 @@
               <hr class="base-page-title-separators" id = "title-separator-2">
             </div>
 
-            <div id = "lesson-finder">
-              Find your lesson / <br>找课文
+            <div id = "enter-lesson-number">
+              Enter Lesson Number / <br>输入课文编号
+              <br><br>
+            </div>
+            <div id="new-lesson">
+              New Lesson/ 新课号: 5
             </div>
 
             <div id="total-text-entry">
 
-              <input type="text" id = "lesson-number-input" placeholder = "输入课文编号" maxlength = 2>
+              <input type="text" id = "lesson-number-input" placeholder = "比如: 1,3" maxlength = 2>
                 <a id="submit-input-link">
                   <button id="submit-input" onclick="saveInput()"><i class="fa fa-arrow-right"></i></button>
                 </a>
               </input>
 
-              <div id="base-page-error-message">
-                <div class="error-message">
-                  *Invalid Empty Input
-                </div>
-                <div class="error-message">
-                </div>
+              <div id="base-page-empty-error" class="error-message">
+                *不能留空输入框
+              </div>
+
+              <div id="base-page-overbound-error" class="error-message">
+                *这个课文展示没有
               </div>
             </div>
 
