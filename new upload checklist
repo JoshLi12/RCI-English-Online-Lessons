@@ -1,0 +1,7 @@
+New Video Upload Checklist:
+1. Create new page and copy the video page format
+2. REMINDER: Use the youtube embed link, not the actual link. Don't forget to add "?vq=hd720&rel=0" after the link
+3. Update the hashmap with the lesson number and the link
+4. Updated the defensive coding under the hasmap for maximum lessons
+5. Change the displayed newest lesson on index Page
+6. Hardcode the "back lesson" and "forward lesson" buttons on each video page
