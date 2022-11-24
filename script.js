@@ -19,14 +19,26 @@ var form  = document.getElementById('forms');
 form.addEventListener('submit', submitFeedback)
 
 let writeToDatabase = (name, email, feedback) => {
-  const backendlessEndpoint = "https://storieddinner.backendless.app/api/data/User_feedback_info";
-  const feedbackData = { Name: name, Email: email, Feedback_message: feedback };
+  const mongoEndpoint = "https://data.mongodb-api.com/app/data-lnnyq/endpoint/data/v1/insertOne";
+  const feedbackData = {
+    "dataSource": "Cluster0",
+    "database": "RCI-English-Website",
+    "collection": "Feedback-info",
+    "document": {
+      'Name': name,
+      'Email': email,
+      'Feedback Message': feedback
+    }
+  };
 
-  fetch(backendlessEndpoint, {
+  fetch(mongoEndpoint, {
     method: 'POST', // or 'PUT'
     headers: {
       'Content-Type': 'application/json',
+      'api-key': '637ed44845955b5e97cf0b94',
+      'Access-Control-Allow-Origin': '*'
     },
+
     body: JSON.stringify(feedbackData),
   })
     .then((response) => response.json())
