@@ -1,2 +1,16 @@
 TODO:
 1. make "enter" button valid for choosing lesson plan
+
+curl --request POST \
+  'https://data.mongodb-api.com/app/data-lnnyq/endpoint/data/v1/insertOne' \
+  --header 'Content-Type: application/json' \
+  --header 'api-key: 637ed44845955b5e97cf0b94' \
+  --data-raw '{
+      "dataSource": "Cluster0",
+      "database": "RCI-English-Website",
+      "collection": "Feedback-Info",
+      "document": {
+        "name": "John Sample",
+        "age": 42
+      }
+  }'
