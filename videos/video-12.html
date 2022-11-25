@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lesson 12</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../public/website-logo.png" type="image/x-icon">
+  </head>
+  <body id="video-page">
+    <main>
+      <a id="sub-icon" onclick="dropMenu()">
+        <div class="dropdownIcon" id="dropdownIconTop">
+        </div>
+        <div class="dropdownIcon" id="dropdownIconBottom">
+        </div>
+      </a>
+
+      <div id="dropdown-page">
+
+        <div id="center-box">
+          <div class="dropdown-buttons">
+            <a id="dropdown-home" href="../index.html">
+              HOME / 主页
+            </a>
+          </div>
+          <div class="dropdown-buttons">
+            <a id="dropdown-feedback" href = "../feedback.html">
+              FEEDBACK / 反馈页面
+            </a>
+          </div>
+          <div class="dropdown-buttons">
+            <a id="dropdown-help" href = "../help.html">
+              HELP / 帮助页面
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="video-page">
+        <a href="../index.html" style="text-decoration: none">
+          <i class="fa fa-arrow-circle-left return-arrow hvr-icon-back"></i>
+        </a>
+
+        <div class="video-page-title">Lesson 12 / 第十二课</div>
+
+        <a id="next-lesson" href="./video-13.html">
+          <div class="video-arrow-right"></div>
+        </a>
+        <a id="previous-lesson" href="./video-11.html">
+          <div class="video-arrow-left"></div>
+        </a>
+        <div class="lesson-video-container">
+          <!-- delete all allows and add rel=0 in the link and change width and height and add vq=hd720-->
+          <iframe class="lesson-video" src="https://www.youtube.com/embed/GFQ5mKCy56U?vq=hd720&rel=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+    </main>
+    <script src="../script.js"></script>
+  </body>
+</html>
