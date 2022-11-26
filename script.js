@@ -72,11 +72,16 @@ function saveInput() {
     [17, "./videos/video-17.html"],
     [18, "./videos/video-18.html"],
     [19, "./videos/video-19.html"],
-    [20, "./videos/video-20.html"]
+    [20, "./videos/video-20.html"],
+    [21, "./videos/video-21.html"],
+    [22, "./videos/video-22.html"],
+    [23, "./videos/video-23.html"],
+    [24, "./videos/video-24.html"],
+    [25, "./videos/video-25.html"]
   ]);
   if (document.getElementById("lesson-number-input").value) {
     var lessonInput = parseInt(document.getElementById("lesson-number-input").value);
-    if (lessonInput <= 20) {
+    if (lessonInput <= 25) {
       let temp = lessons.get(lessonInput);
       document.getElementById("submit-input-link").setAttribute("href", temp);
     }
