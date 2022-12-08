@@ -13,6 +13,7 @@
   </head>
 
   <body>
+    <script src="script.js"></script>
     <main>
       <a id="sub-icon" onclick="dropMenu()">
         <div class="dropdownIcon" id="dropdownIconTop">
@@ -68,16 +69,28 @@
               <br><br>
             </div>
             <div id="new-lesson">
-              New Lesson/ 新课号: 25
+              New Lesson/ 新课号: 35
             </div>
 
             <div id="total-text-entry">
 
               <input type="text" id = "lesson-number-input" placeholder = "比如: 1,3" maxlength = 2>
                 <a id="submit-input-link">
-                  <button id="submit-input" onclick="saveInput()"><i class="fa fa-arrow-right"></i></button>
+                  <button id="submit-input" onclick="saveInput()">
+                    <i class="fa fa-arrow-right"></i>
+                  </button>
                 </a>
               </input>
+
+              <script>
+                var input = document.getElementById("lesson-number-input");
+                input.addEventListener("keydown", function (e) {
+                  if (e.key === "Enter") {
+                    saveInput();
+                  }
+                });
+              </script>
+
 
               <div id="base-page-empty-error" class="error-message">
                 *不能留空输入框
@@ -108,9 +121,6 @@
             </div>
           </div>
         </div>
-
-
     </main>
-    <script src="script.js"></script>
   </body>
 </html>

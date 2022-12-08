@@ -14,8 +14,10 @@ function submitFeedback(event) {
     document.getElementById("feedback-page-error-message").style.display = "inline-block";
   }
 }
+
 var form  = document.getElementById('forms');
 form.addEventListener('submit', submitFeedback)
+
 let writeToDatabase = (name, email, feedback) => {
   const backendlessEndpoint = "https://storieddinner.backendless.app/api/data/User_feedback_info";
   const feedbackData = { Name: name, Email: email, Feedback_message: feedback };
@@ -48,7 +50,6 @@ function dropMenu() {
   dropped = !dropped;
 }
 
-
 function saveInput() {
   document.getElementById("base-page-overbound-error").style.display = "none";
   document.getElementById("base-page-empty-error").style.display = "none";
@@ -77,13 +78,24 @@ function saveInput() {
     [22, "./videos/video-22.html"],
     [23, "./videos/video-23.html"],
     [24, "./videos/video-24.html"],
-    [25, "./videos/video-25.html"]
+    [25, "./videos/video-25.html"],
+    [26, "./videos/video-26.html"],
+    [27, "./videos/video-27.html"],
+    [28, "./videos/video-28.html"],
+    [29, "./videos/video-29.html"],
+    [30, "./videos/video-30.html"],
+    [31, "./videos/video-31.html"],
+    [32, "./videos/video-32.html"],
+    [33, "./videos/video-33.html"],
+    [34, "./videos/video-34.html"],
+    [35, "./videos/video-35.html"]
   ]);
   if (document.getElementById("lesson-number-input").value) {
     var lessonInput = parseInt(document.getElementById("lesson-number-input").value);
-    if (lessonInput <= 25) {
+    if (lessonInput <= 35) {
       let temp = lessons.get(lessonInput);
-      document.getElementById("submit-input-link").setAttribute("href", temp);
+      window.location.href = temp;
+      console.log(document.getElementById("submit-input-link"));
     }
     else {
       document.getElementById("base-page-overbound-error").style.display = "block";
